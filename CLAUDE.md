@@ -1,0 +1,221 @@
+# Project: Phuong's Content Workspace
+## Writer: Dao Thu Phuong
+
+---
+
+## Critical Writing Rules
+
+These are the non-negotiable rules extracted from the Style Guide. Break any of these and the draft fails.
+
+### Sentence-Level
+
+**No fragment sentences.**
+Every sentence must have a subject, a verb, and a complete thought.
+
+- BAD: "Simple. Scalable. And surprisingly effective."
+- GOOD: "You don't research, stock, or ship these products. You just earn commission when customers buy them."
+
+**No stacked adjectives.**
+Pick one word. If you can't pick one, the sentence is too vague.
+
+- BAD: "Powerful, robust, comprehensive solution."
+- GOOD: "A strong solution that handles X."
+
+**No hedging.**
+Be direct. Take a stance and defend it with proof.
+
+- BAD: "It might be worth considering..." / "This could potentially help..."
+- GOOD: "If you get it wrong, you'll feel it quickly in backlogs and SLAs."
+
+**No telling the reader how to feel.**
+
+- BAD: "This is a really exciting development." / "The possibilities are truly endless."
+- GOOD: Show why something is good with evidence. Don't narrate the emotion.
+
+**No disclaimer padding.**
+
+- BAD: "It's worth noting that..." / "It's important to understand that..." / "While there are many factors to consider..."
+- GOOD: Just say the thing directly.
+
+**No filler setup lines that delay the point.**
+
+- BAD: "There's a better approach." / "The idea is simple." / "Here's where it gets interesting."
+- GOOD: Cut straight to the actual thing. Instead of "There's a better approach, and it doesn't require more motivation," write the approach.
+
+**No em dashes.**
+Replace with commas, periods, or colons. Or rewrite the sentence.
+
+### Vocabulary
+
+**No corporate filler. Ever.**
+
+| Never write | Write instead |
+|---|---|
+| Leverage / Utilize | Use |
+| Streamlined | Simple / Fast |
+| Comprehensive | Thorough / Complete |
+| Robust | Strong / Solid |
+| Game-changer | (describe the actual impact) |
+| Unlock the power of | (describe what it does) |
+| Dive deep | Look closer / Break down |
+| In today's fast-paced world | (cut entirely) |
+| It's important to note | (cut entirely) |
+| It should be noted | (cut entirely) |
+| In conclusion | (cut entirely) |
+| This allows you to | You can |
+| This means that | (rewrite to be direct) |
+| Studies show / Research suggests | (name the specific source or cut it) |
+| There's a better way / The idea is simple | (cut and go straight to the point) |
+| It turns out that | (cut entirely, just state the fact) |
+
+**Use specific numbers over vague claims.** Never say "most pages are short." Say "53.4% of cited pages are under 1,000 words."
+
+**No vague authority.** Never write "studies show," "research suggests," or "experts agree" without naming the source. Either cite it or cut it.
+
+### Opening Rules
+
+**Never open with:**
+- Throat-clearing intros that warm up before making a point
+- "In this article, we'll explore..."
+- "In today's [anything]..."
+- Stats without stakes (a number alone is not a hook)
+
+**Openings need tension, not just description.** Naming the problem isn't enough. The opener has to make the reader feel the stakes or flip what they assumed.
+
+- BAD: "Most people fail at building habits."
+- GOOD: "You've tried this six times and it never sticks, and the advice you followed is the reason why."
+
+### Closing Rules
+
+**Never close with:**
+- A summary of what was covered ("In summary, we covered X, Y, and Z")
+- Bulleted recaps of section headers
+- Corporate boilerplate promises
+
+**Don't let closings drift into general advice.** The last paragraph must land on something specific and sharp, not fade out.
+
+- BAD: "Start small and be consistent."
+- GOOD: "Move your phone charger to the kitchen tonight. That's your first environment redesign."
+
+### Transition Rules
+
+**Never use:**
+- "This means that" or "This allows you to" as connectors
+- "Let's take a look at" / "Now let's move on to"
+
+**Vary transition patterns.** Don't repeat the same transition structure more than twice in one article. Mix questions, bridge sentences, and direct pivots.
+
+### Structure Rules
+
+**Connected prose over bullet walls.** Ideas that need explanation should live in paragraphs with connective tissue between them. Bullets work only for genuinely scannable items: checklists, feature comparisons, quick specs.
+
+**Use hierarchy.** Not everything deserves the same depth. Some things get one sentence. Some get a full section. If three paragraphs in a row are the same length and weight, at least one needs to be cut down or expanded.
+
+**Never repeat the same information** in slightly different words across intro, first paragraph, and second paragraph.
+
+**No false balance.** When comparing options, take a position. "Both have their strengths" is a cop-out. "Notion beats Google Docs for project wikis, but Google Docs is faster for throwaway drafts" is a real comparison.
+
+### Evidence Rules
+
+**Concrete before abstract.** Show the example first, then name the principle. Never explain a concept and then give an example. Flip it.
+
+- BAD: "Environment design means shaping your surroundings. For example, putting your running shoes by the door."
+- GOOD: "Put your running shoes by the door. That's environment design."
+
+**No data without interpretation.** Every stat needs a one-liner that explains what it means.
+
+- BAD: "53.4% of cited pages are under 1,000 words."
+- GOOD: "53.4% of cited pages are under 1,000 words. Short, focused content wins in AI search."
+
+**No corporate boilerplate.** No "robust governance," "compounds value," or "continued leadership in shaping responsible AI practices globally."
+
+---
+
+## Style Guide Reference
+
+When writing any content, ALWAYS read `style-guide/writing-style-guide-v3(final).md` first. Follow every guideline in that document, including tone, sentence structure, paragraph structure, vocabulary, openings, closings, transitions, evidence, formatting, and pacing.
+
+---
+
+## Workspace Structure
+
+```
+style-guide/                   → Writing style guide and related test files
+style-research/                → Source material that informed the style guide
+```
+
+Project folders follow this structure when created:
+
+```
+{Project Name}/
+  _resources/                  → Writing skill file, training guides, content inventory
+  research/                    → Raw research notes and source material
+  outlines/                    → Article outlines before drafting
+  drafts/                      → Work-in-progress drafts (versioned: v1, v2...)
+  reviews/                     → Editor/reviewer feedback files
+  final/                       → Published-ready content
+  deliverables/                → Final submitted work (training projects, assessments)
+  social/                      → Social media posts tied to published articles
+```
+
+---
+
+## Content Pipeline
+
+Every piece of content follows this workflow:
+
+1. **Research** → Gather sources, data, competitor analysis → save to `research/`
+2. **Outline** → Structure the argument, pick examples, define sections → save to `outlines/`
+3. **Draft** → Write the full piece following the style guide → save to `drafts/` with version suffix (v1, v2...)
+4. **Review** → Run against Critical Writing Rules above, get feedback → save feedback to `reviews/`
+5. **Final** → Apply feedback, final polish → save to `final/`
+6. **Social** → Write distribution posts (LinkedIn, Twitter, email) → save to `social/`
+
+---
+
+## File Naming Convention
+
+```
+{topic-slug}-{type}.md
+
+Examples:
+  loyalty-apps-pricing.md          → research file
+  loyalty-apps-pricing.md          → outline (same name, different folder)
+  loyalty-apps-pricing-v1.md       → first draft
+  loyalty-apps-pricing-v2.md       → revised draft
+  loyalty-apps-pricing.md          → final version
+  loyalty-apps-pricing-linkedin.md → social post
+```
+
+Rules:
+- Lowercase, hyphen-separated
+- No spaces in filenames
+- Version suffix on drafts only (-v1, -v2...)
+- Social posts get platform suffix (-linkedin, -twitter, -email)
+
+---
+
+## Quality Checklist
+
+Every piece must pass these checks before it's considered done:
+
+- [ ] Opens with problem, constraint, or twist, not throat-clearing
+- [ ] Closes with a sharp thought, not a summary or recap
+- [ ] No fragment sentences anywhere
+- [ ] No stacked adjectives
+- [ ] No corporate filler words (check the banned vocabulary table)
+- [ ] No em dashes
+- [ ] No hedging language
+- [ ] No telling the reader how to feel
+- [ ] No filler setup lines that delay the point
+- [ ] Every stat has a plain-language interpretation
+- [ ] Vague claims replaced with specific numbers
+- [ ] No vague authority ("studies show" without a named source)
+- [ ] Paragraphs are 1-3 sentences with heavy white space
+- [ ] Bullets used only for scannable items, not for ideas that need explanation
+- [ ] Transitions vary, no pattern repeated more than twice
+- [ ] Pacing has hierarchy, key ideas get full breakdowns, secondary points stay brief
+- [ ] No repeated information across sections
+- [ ] Concrete before abstract, examples first
+- [ ] Comparisons take a position, no false balance
+- [ ] Tone is conversational-professional, peer-to-peer
