@@ -15,6 +15,12 @@ Every sentence must have a subject, a verb, and a complete thought.
 - BAD: "Simple. Scalable. And surprisingly effective."
 - GOOD: "You don't research, stock, or ship these products. You just earn commission when customers buy them."
 
+**No choppy sentence splits.**
+Don't break one thought into two short sentences just to keep them short. If two sentences share a single thought, combine them.
+
+- BAD: "The ads didn't change. The store did."
+- GOOD: "The ads didn't change, but the store did."
+
 **No stacked adjectives.**
 Pick one word. If you can't pick one, the sentence is too vague.
 
@@ -105,6 +111,12 @@ Replace with commas, periods, or colons. Or rewrite the sentence.
 
 **Vary transition patterns.** Don't repeat the same transition structure more than twice in one article. Mix questions, bridge sentences, and direct pivots.
 
+### Sentence Flow Rules
+
+**Connect sentences and paragraphs.** Each sentence should relate clearly to the one before it. The end of one paragraph should set up the beginning of the next. If a reader has to pause and ask "why is this here?" the connection is missing.
+
+**Don't overuse connecting words.** "However," "additionally," "furthermore" in every other sentence sounds like a school essay. Vary connectors or let the ideas connect themselves.
+
 ### Structure Rules
 
 **Connected prose over bullet walls.** Ideas that need explanation should live in paragraphs with connective tissue between them. Bullets work only for genuinely scannable items: checklists, feature comparisons, quick specs.
@@ -126,6 +138,8 @@ Replace with commas, periods, or colons. Or rewrite the sentence.
 
 - BAD: "53.4% of cited pages are under 1,000 words."
 - GOOD: "53.4% of cited pages are under 1,000 words. Short, focused content wins in AI search."
+
+**Don't overload with statistics.** Not every paragraph needs a number. Use stats when a claim is surprising or the reader would push back. If three consecutive paragraphs cite sources, at least one should make its point without data.
 
 **No corporate boilerplate.** No "robust governance," "compounds value," or "continued leadership in shaping responsible AI practices globally."
 
@@ -202,6 +216,7 @@ Every piece must pass these checks before it's considered done:
 - [ ] Opens with problem, constraint, or twist, not throat-clearing
 - [ ] Closes with a sharp thought, not a summary or recap
 - [ ] No fragment sentences anywhere
+- [ ] No choppy sentence splits (two short sentences that share one thought should be combined)
 - [ ] No stacked adjectives
 - [ ] No corporate filler words (check the banned vocabulary table)
 - [ ] No em dashes
@@ -213,6 +228,9 @@ Every piece must pass these checks before it's considered done:
 - [ ] No vague authority ("studies show" without a named source)
 - [ ] Paragraphs are 1-3 sentences with heavy white space
 - [ ] Bullets used only for scannable items, not for ideas that need explanation
+- [ ] Sentences and paragraphs flow into each other, no abrupt jumps
+- [ ] Connecting words varied, not overused
+- [ ] Statistics used where proof matters, not stacked in every section
 - [ ] Transitions vary, no pattern repeated more than twice
 - [ ] Pacing has hierarchy, key ideas get full breakdowns, secondary points stay brief
 - [ ] No repeated information across sections

@@ -41,6 +41,7 @@ Closer to casual, never sloppy. First-person voice works well when the format ca
 **Banned patterns:**
 - [MUST] Don't use fragment sentences for fake drama: "Simple. Scalable. And surprisingly effective." Every sentence needs a subject and a verb
 - [MUST] Don't stack adjectives: "Powerful, robust, comprehensive solution." Pick one word. If you can't pick one, the sentence is too vague
+- [MUST] **Don't break sentences apart just to make them short.** Short sentences are the default, but splitting one thought into two choppy pieces makes the paragraph harder to read, not easier. "The ads didn't change. The store did." sounds like copywriting, not conversation. "The ads didn't change, but the store did" reads like a real person talking. If two short sentences share a single thought, combine them with a comma, "but," "and," or a colon. Every sentence should be complete *and* meaningful on its own, not just grammatically correct
 - [SHOULD] Don't write run-on sentences that stack clauses with "and" and "but" without stopping (note: my raw writing does this, the guide corrects for it)
 - [SHOULD] Don't start 3-4 paragraphs in a row with "The" or "This" or "When it comes to." Vary the rhythm
 
@@ -59,7 +60,28 @@ The rhythm: make a clear point in one or two sentences, let it land, then build 
 
 ---
 
-## 4. Vocabulary
+## 4. Sentence Flow and Cohesion
+
+**Default:** Sentences and paragraphs should flow into each other so the reader never feels lost between ideas. The goal is invisible connective tissue, not mechanical transition words.
+
+- [MUST] **Connect sentences within a paragraph.** Each sentence should relate clearly to the one before it. If a reader has to pause and ask "why is this sentence here?" the connection is missing. Use a bridging phrase, a pronoun that refers back, or a cause-and-effect link to make the relationship obvious. But don't force a connector where the logic already flows naturally
+- [MUST] **Connect paragraphs to each other.** The end of one paragraph should set up the beginning of the next. The simplest way: end a paragraph with a point that raises a question, then open the next paragraph by answering it. Or end with a consequence that leads to the next idea. A paragraph that stops cold and a new paragraph that starts on a completely different thought will lose the reader
+- [MUST] **Don't overuse connecting words.** "However," "additionally," "furthermore," "moreover," and "consequently" in every other sentence makes writing sound like a school essay. Use them sparingly. Often, the connection is clear from the ideas themselves and doesn't need a signpost word. When you do use connectors, vary them: "but," "still," "that gap," "which means," or just restructure the sentence so the link is built into the thought
+- [SHOULD] **Use the end of a sentence to set up the next one.** The last few words of a sentence carry the most weight. If the next sentence builds on a specific idea, place that idea at the end of the current sentence so the reader's attention is already pointed in the right direction
+
+**Good example:**
+> "Every inefficiency in your store compounds with every dollar you add. If your product pages aren't converting, more traffic just means more people leaving."
+
+The second sentence doesn't need "for example" or "in other words" because "compounds with every dollar" naturally raises the question "how?" and the next sentence answers it.
+
+**Bad example:**
+> "Your store has inefficiencies. Additionally, your product pages might not be converting. Furthermore, more traffic could mean more people leaving."
+
+Same ideas, but the connecting words do the work instead of the ideas themselves. The paragraph reads like a list of observations rather than a building argument.
+
+---
+
+## 5. Vocabulary
 
 **Default:** Simple words, specific data. Simple by default, technical only when precision changes meaning.
 
@@ -94,7 +116,7 @@ The rhythm: make a clear point in one or two sentences, let it land, then build 
 
 ---
 
-## 5. Opening Patterns
+## 6. Opening Patterns
 
 Start with the problem, the constraint, or the twist. Not with context. Not with definitions. Not with "AI is changing everything."
 
@@ -125,7 +147,7 @@ Start with the problem, the constraint, or the twist. Not with context. Not with
 
 ---
 
-## 6. Closing Patterns
+## 7. Closing Patterns
 
 A strong closing thought that adds something new or reframes what the reader just learned. Not a summary. Not a bulleted recap. Not a pep talk.
 
@@ -146,7 +168,7 @@ A strong closing thought that adds something new or reframes what the reader jus
 
 ---
 
-## 7. Transitions
+## 8. Transitions
 
 **Banned transitions:**
 - [MUST] Don't use "This means that" or "This allows you to" as connectors
@@ -163,7 +185,7 @@ A strong closing thought that adds something new or reframes what the reader jus
 
 ---
 
-## 8. Evidence and Examples
+## 9. Evidence and Examples
 
 **Default:** Examples first, data as backup. Strong lean toward concrete scenarios.
 
@@ -176,12 +198,13 @@ A strong closing thought that adds something new or reframes what the reader jus
 **Rules:**
 - [MUST] Concrete before abstract. Show me the shoelaces before you tell me about "collaborative advantage." Never explain a concept and then give an example. Flip it: give the example, then name the concept. Instead of "Environment design means shaping your surroundings. For example, putting your running shoes by the door," write "Put your running shoes by the door. That's environment design"
 - [MUST] When comparing options, take a position. Don't give false balance. Give one option more space if it's genuinely better. Be honest about tradeoffs, but commit. "Both have their strengths" is a cop-out. "Notion beats Google Docs for project wikis, but Google Docs is faster for throwaway drafts" is a real comparison
+- [MUST] **Don't overload with statistics.** Statistics make writing credible, but stacking them in every section overwhelms the reader and flattens the writing into a data dump. Not every paragraph needs a number. Use statistics at the moments where proof matters most: when a claim is surprising, when the reader would naturally push back, or when the number changes how they think about the decision. Let some sections breathe with logic, examples, or case narratives instead. If you find yourself citing a source in three consecutive paragraphs, at least one of those paragraphs should make its point without data
 - [SHOULD] Never use data alone without interpretation. Every stat needs a one-liner that explains what it means in plain language
 - [NICE] Use real screenshots and real examples over hypotheticals when possible
 
 ---
 
-## 9. Formatting Rules
+## 10. Formatting Rules
 
 - [MUST] **No em dashes.** Replace with commas, periods, or colons. Or rewrite the sentence.
 - [MUST] **Heavy white space.** Short paragraphs (1-3 sentences). But the ideas between those paragraphs need to connect.
@@ -192,7 +215,7 @@ A strong closing thought that adds something new or reframes what the reader jus
 
 ---
 
-## 10. Pacing
+## 11. Pacing
 
 **Default:** Fast by default with deliberate slowdowns for key ideas.
 
@@ -203,7 +226,7 @@ A strong closing thought that adds something new or reframes what the reader jus
 
 ---
 
-## 11. Things AI Must Never Do in My Voice
+## 12. Things AI Must Never Do in My Voice
 
 All items in this section are [MUST]. Rank-ordered by how badly they break my voice.
 
@@ -230,7 +253,7 @@ All items in this section are [MUST]. Rank-ordered by how badly they break my vo
 
 ---
 
-## 12. My Raw Writing Tendencies (Self-Awareness Notes)
+## 13. My Raw Writing Tendencies (Self-Awareness Notes)
 
 Based on my actual unedited writing, these are patterns to watch for and correct:
 
@@ -260,6 +283,8 @@ Based on my actual unedited writing, these are patterns to watch for and correct
 | [MUST] | Personality | Opinionated with evidence. Honest about tradeoffs. No false balance |
 | [MUST] | Anti-patterns | No hedging, no disclaimer padding, no paraphrasing-tool artifacts, no filler setup lines |
 | [MUST] | Formatting | No em dashes. Heavy white space |
+| [MUST] | Sentence flow | Sentences and paragraphs connect naturally. No choppy splits, no overused connectors |
+| [MUST] | Statistics | Use stats where proof matters most, not in every section. Let some paragraphs breathe without data |
 | [SHOULD] | Paragraphs | 1-3 sentences. Connected prose, not bullet walls |
 | [MUST] | Openings | Tension and stakes, not just problem description. Never throat-clearing |
 | [MUST] | Closings | Specific, sharp endpoint. Never drift into general advice |
@@ -271,7 +296,7 @@ Based on my actual unedited writing, these are patterns to watch for and correct
 
 ---
 
-## 13. Implementation Guide: New Content
+## 14. Implementation Guide: New Content
 
 When I ask you to write a new piece of content, follow this process. Ask one question at a time. Wait for my answer before moving on to the next.
 
@@ -301,7 +326,7 @@ Before writing, review the answers against this Style Guide. If any input confli
 Don't silently override the Style Guide. Don't silently follow the Style Guide if the input clearly contradicts it. Flag it, let me decide, then write.
 
 **Step 8. Write the draft**
-Write the full draft applying every [MUST] and [SHOULD] guideline in Sections 1-12 of this Style Guide. Apply [NICE] guidelines where they fit naturally. After the draft, include a short checklist confirming which guidelines were applied:
+Write the full draft applying every [MUST] and [SHOULD] guideline in Sections 1-13 of this Style Guide. Apply [NICE] guidelines where they fit naturally. After the draft, include a short checklist confirming which guidelines were applied:
 - Tone: [conversational-professional / adjusted per user request]
 - Opening pattern: [which one was used]
 - Closing pattern: [which one was used]
@@ -311,7 +336,7 @@ Write the full draft applying every [MUST] and [SHOULD] guideline in Sections 1-
 
 ---
 
-## 14. Implementation Guide: Outline-First Drafting
+## 15. Implementation Guide: Outline-First Drafting
 
 When the user provides an outline (H2/H3 structure), skip the question sequence in Section 13 and start writing immediately. This workflow is built for speed: the outline is the brief.
 
@@ -323,7 +348,7 @@ When the user provides an outline (H2/H3 structure), skip the question sequence 
 4. **[MUST] Keep questions to a minimum.** Ask only if the outline is unclear or missing critical details for the next section. Maximum 1-2 questions, then proceed.
 5. **[MUST] Follow the outline structure exactly.** Do not add new sections, merge sections, or change the order unless the user asks.
 6. **[MUST] Follow word counts and formats if provided.** If the outline specifies a target length or format for a section, match it. If not provided, use reasonable defaults and proceed.
-7. **[MUST] Apply every rule in Sections 1-12 of this Style Guide.** No exceptions. The outline-first workflow changes the process, not the standards.
+7. **[MUST] Apply every rule in Sections 1-13 of this Style Guide.** No exceptions. The outline-first workflow changes the process, not the standards.
 
 **Section Template**
 
@@ -343,4 +368,4 @@ Use this template internally for each section before drafting:
 2. Start with the Introduction. Draft it, then ask: "Approve this section or want edits?"
 3. On approval, move to the next section in order. Repeat until the article is complete.
 4. If a section heading is ambiguous or missing key context, ask 1-2 targeted questions before drafting that section. Don't stall the whole article for one unclear heading.
-5. After the final section, provide the same checklist from Section 13, Step 8 to confirm Style Guide compliance.
+5. After the final section, provide the same checklist from Section 14, Step 8 to confirm Style Guide compliance.
