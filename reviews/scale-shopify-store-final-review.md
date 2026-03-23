@@ -336,9 +336,9 @@ Như vậy tactics xuất hiện đúng lúc hơn. Người đọc đã hiểu "
 
 | Điểm so sánh | Bản cũ | Bản mới |
 |---|---|---|
-| **Mở bài** | "Conversion fixes stop the leaking, but retention is what fills the bucket." — mở bằng principle, dùng metaphor, hơi polished, hơi copywriting-framed | "You paid to acquire the customer once. They bought. Then they disappeared." — mở bằng tình huống cụ thể, có friction rõ, dễ hình dung, đúng kiểu concrete before abstract |
-| **Data** | Data đến sớm, người đọc chưa có tình huống để bám | "The numbers support that..." — data vẫn còn, nhưng đi sau point, đúng vai trò supporting evidence |
-| **Chuyển sang tactics** | "Retention at this stage doesn't require expensive tools or a dedicated team. Three things cover 80%..." — hơi framework-heavy, nghe như chuyển slide | "The good news is that you do not need a full retention team or an expensive stack to improve it..." — vẫn practical, nhưng mềm và tự nhiên hơn, connected prose hơn |
+| **Mở bài** | "Conversion fixes stop the leaking, but retention is what fills the bucket."  mở bằng principle, dùng metaphor, hơi polished, hơi copywriting-framed | "You paid to acquire the customer once. They bought. Then they disappeared."  mở bằng tình huống cụ thể, có friction rõ, dễ hình dung, đúng kiểu concrete before abstract |
+| **Data** | Data đến sớm, người đọc chưa có tình huống để bám | "The numbers support that..."  data vẫn còn, nhưng đi sau point, đúng vai trò supporting evidence |
+| **Chuyển sang tactics** | "Retention at this stage doesn't require expensive tools or a dedicated team. Three things cover 80%..."  hơi framework-heavy, nghe như chuyển slide | "The good news is that you do not need a full retention team or an expensive stack to improve it..."  vẫn practical, nhưng mềm và tự nhiên hơn, connected prose hơn |
 
 ---
 
@@ -346,10 +346,10 @@ Như vậy tactics xuất hiện đúng lúc hơn. Người đọc đã hiểu "
 
 Vì nó làm đúng 4 điểm cốt lõi:
 
-1. **Concrete before abstract** — Mở bằng "You paid to acquire the customer once. They bought. Then they disappeared." thay vì mở bằng "Conversion fixes stop the leaking, but retention is what fills the bucket."
+1. **Concrete before abstract** Mở bằng "You paid to acquire the customer once. They bought. Then they disappeared." thay vì mở bằng "Conversion fixes stop the leaking, but retention is what fills the bucket."
 
-2. **Example / friction before principle** — Người đọc thấy pain trước, rồi mới thấy takeaway.
+2. **Example / friction before principle** Người đọc thấy pain trước, rồi mới thấy takeaway.
 
-3. **Data supports, not leads** — Số liệu vẫn có, nhưng không chiếm quyền dẫn dắt đoạn mở.
+3. **Data supports, not leads**  Số liệu vẫn có, nhưng không chiếm quyền dẫn dắt đoạn mở.
 
-4. **Less performative, more grounded** — Bản mới bớt câu kiểu "headline line" và bám sát business reality hơn.
+4. **Less performative, more grounded** Bản mới bớt câu kiểu "headline line" và bám sát business reality hơn.
