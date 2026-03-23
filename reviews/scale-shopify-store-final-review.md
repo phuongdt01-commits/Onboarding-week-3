@@ -1,19 +1,5 @@
 # Review: scale-shopify-store-final.md
 
-## Ghi chú tổng quan
-
-Data => skills/agents & subs
-
-Writing => style guide + brand voice => agents or skills
-
-Style guide => writing samples (your own articles, samples)
-
-AI Writing style
-
-Content review
-
----
-
 ## Những điểm chưa bám guide hoàn toàn
 
 ### a) Có dấu hiệu "copywriting punch" hơi quá tay ở vài chỗ
