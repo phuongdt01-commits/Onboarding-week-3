@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { zoom: calc({{WIDTH}} / 1526); }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-image: {{BACKGROUND_PNG}};
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 80px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <!-- Icon -->
+  <div style="margin-bottom: 28px;">
+    <svg width="56" height="56" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="48" height="48" rx="12" fill="#00BCE1"/>
+      <path d="M24 12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" fill="#FFFFFF"/>
+      <circle cx="24" cy="24" r="3" fill="#FFFFFF"/>
+    </svg>
+  </div>
+
+  <!-- Headline -->
+  <div style="max-width: 1350px;">
+    <div style="
+      color: #06038D;
+      font-size: 84px;
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 24px;
+      text-shadow: 0 0 1px rgba(6, 3, 141, 0.4);
+    ">
+      6 Innovative<br>Loyalty<br>Programs
+    </div>
+
+    <!-- Cherokee accent bar -->
+    <div style="
+      width: 120px;
+      height: 9px;
+      background: #FCD299;
+      border-radius: 4px 20px 20px 4px;
+      margin-bottom: 20px;
+    "></div>
+
+    <!-- Subtitle -->
+    <div style="
+      color: rgba(6, 3, 141, 0.75);
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.3;
+    ">
+      Drive repeat purchases beyond traditional points
+    </div>
+  </div>
+
+</body>
+</html>

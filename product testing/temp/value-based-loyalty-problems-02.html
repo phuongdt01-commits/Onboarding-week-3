@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { zoom: calc({{WIDTH}} / 1526); }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-image: {{BACKGROUND_PNG}};
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 80px;
+      gap: 32px;
+      overflow: hidden;
+    }
+    .header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .overline {
+      color: #00BCE1;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+    .headline {
+      color: #06038D;
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 1.15;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      width: 100%;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(6, 3, 141, 0.08);
+      padding: 22px 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .card-icon { margin-bottom: 2px; }
+    .card-title {
+      color: #06038D;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .card-desc {
+      color: rgba(6, 3, 141, 0.75);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="overline">Program Design</div>
+    <div class="headline">Four Core Problems with Traditional Programs</div>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-icon">
+        <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="48" height="48" rx="10" fill="#00BCE1"/>
+          <path d="M14 24h20M18 20l-4 4 4 4M30 20l4 4-4 4" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="card-title">Math Competition</div>
+      <div class="card-desc">Vulnerable to higher rates</div>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="48" height="48" rx="10" fill="#00BCE1"/>
+          <path d="M24 14C18.5 14 14 18.5 14 24s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10z" stroke="#FFFFFF" stroke-width="1.5"/>
+          <path d="M24 18v6l4 4" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="card-title">Memorability Gap</div>
+      <div class="card-desc">Easy programs feel forgettable</div>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="48" height="48" rx="10" fill="#00BCE1"/>
+          <path d="M14 20h20v16H14z" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M18 24h4M18 28h12" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="card-title">Limited Data</div>
+      <div class="card-desc">What vs why customers buy</div>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="48" height="48" rx="10" fill="#00BCE1"/>
+          <path d="M24 14L32 24l-8 10-8-10 8-10z" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M24 20l4 4-4 4-4-4 4-4z" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="card-title">Value-Washing</div>
+      <div class="card-desc">Claims vs actual values</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

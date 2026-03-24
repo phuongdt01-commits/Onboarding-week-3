@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { zoom: calc({{WIDTH}} / 1526); }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-image: {{BACKGROUND_PNG}};
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px;
+      overflow: hidden;
+    }
+    .icon { margin-bottom: 32px; }
+    .headline {
+      color: #06038D;
+      font-size: 68px;
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 24px;
+      text-align: center;
+      max-width: 1000px;
+    }
+    .underline {
+      width: 100px;
+      height: 6px;
+      background: #FCD299;
+      border-radius: 3px;
+      margin: 24px auto;
+    }
+    .subtitle {
+      color: #00BCE1;
+      font-size: 28px;
+      font-weight: 600;
+      text-align: center;
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+  <div class="icon">
+    <svg width="72" height="72" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Gift box icon for loyalty programs -->
+      <rect x="10" y="14" width="28" height="24" rx="2" fill="none" stroke="#06038D" stroke-width="2"/>
+      <path d="M24 14V8M10 20h28" stroke="#06038D" stroke-width="2" stroke-linecap="round"/>
+      <path d="M16 8v6M32 8v6" stroke="#00BCE1" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Ribbon -->
+      <circle cx="24" cy="24" r="4" fill="#00BCE1"/>
+      <path d="M24 20v8M20 24h8" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <div class="headline">7 Personalized Loyalty Programs</div>
+  <div class="underline"></div>
+  <div class="subtitle">That Drive Choice & Behavior-Based Rewards</div>
+</body>
+</html>

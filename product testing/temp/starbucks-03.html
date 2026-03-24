@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { zoom: calc({{WIDTH}} / 1526); }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-image: {{BACKGROUND_PNG}};
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 80px;
+      gap: 36px;
+      overflow: hidden;
+    }
+    .headline {
+      color: #06038D;
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .flow-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      justify-content: center;
+    }
+    .step {
+      flex: 0 1 320px;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 40px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+    .step-icon {
+      width: 48px;
+      height: 48px;
+      background: #00BCE1;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 24px;
+    }
+    .step-title {
+      color: #06038D;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .step-desc {
+      color: rgba(6, 3, 141, 0.75);
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .arrow {
+      color: #00BCE1;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .trigger-badge {
+      background: rgba(0, 188, 225, 0.2);
+      border: 2px solid #00BCE1;
+      border-radius: 16px;
+      padding: 12px 20px;
+      color: #06038D;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="headline">Behavioral Triggers: Right Offer, Right Time</div>
+
+  <div class="flow-container">
+    <div class="step">
+      <div class="step-icon">🛍️</div>
+      <div class="step-title">Purchase Pattern</div>
+      <div class="step-desc">Customer buys</div>
+    </div>
+
+    <div class="arrow">→</div>
+
+    <div class="step">
+      <div class="step-icon">🔍</div>
+      <div class="step-title">Behavior Detected</div>
+      <div class="step-desc">Pattern analyzed</div>
+    </div>
+
+    <div class="arrow">→</div>
+
+    <div class="step">
+      <div class="step-icon">⏰</div>
+      <div class="step-title">Optimal Timing</div>
+      <div class="step-desc">7:45 AM delivery</div>
+      <div class="trigger-badge">HIGHEST CONVERSION</div>
+    </div>
+  </div>
+</body>
+</html>

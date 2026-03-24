@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html style="zoom: calc({{WIDTH}} / 1526); width: 1526px;">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      background-image: url('{{BACKGROUND_PNG}}');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 40px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      width: 100%;
+      max-width: 1150px;
+    }
+    .industry-card {
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 14px;
+    }
+    .industry-icon {
+      font-size: 40px;
+      color: #00BCE1;
+    }
+    .industry-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #06038D;
+    }
+    .industry-desc {
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(6, 3, 141, 0.7);
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="industry-card">
+      <div class="industry-icon">👗</div>
+      <div class="industry-name">Fashion & Apparel</div>
+      <div class="industry-desc">Browse online, try in-store, buy anywhere</div>
+    </div>
+
+    <div class="industry-card">
+      <div class="industry-icon">💄</div>
+      <div class="industry-name">Beauty & Cosmetics</div>
+      <div class="industry-desc">Discover, test, and reorder seamlessly</div>
+    </div>
+
+    <div class="industry-card">
+      <div class="industry-icon">☕</div>
+      <div class="industry-name">Food & Beverage</div>
+      <div class="industry-desc">App orders, counter purchases, delivery</div>
+    </div>
+
+    <div class="industry-card">
+      <div class="industry-icon">🛒</div>
+      <div class="industry-name">Grocery</div>
+      <div class="industry-desc">Personalized offers across all channels</div>
+    </div>
+
+    <div class="industry-card">
+      <div class="industry-icon">🧘</div>
+      <div class="industry-name">Health & Wellness</div>
+      <div class="industry-desc">Classes, products, and engagement rewards</div>
+    </div>
+
+    <div class="industry-card">
+      <div class="industry-icon">🏋️</div>
+      <div class="industry-name">Fitness</div>
+      <div class="industry-desc">Streaks, check-ins, and win-back triggers</div>
+    </div>
+  </div>
+</body>
+</html>

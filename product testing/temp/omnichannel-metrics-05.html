@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html style="zoom: calc({{WIDTH}} / 1526); width: 1526px;">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      background-image: url('{{BACKGROUND_PNG}}');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 40px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .header {
+      font-size: 28px;
+      font-weight: 700;
+      color: #06038D;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      width: 100%;
+      max-width: 1100px;
+    }
+    .metric-card {
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+    .metric-label {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #00BCE1;
+    }
+    .metric-value {
+      font-size: 56px;
+      font-weight: 700;
+      color: #06038D;
+      line-height: 1;
+    }
+    .metric-range {
+      font-size: 18px;
+      font-weight: 600;
+      color: rgba(6, 3, 141, 0.75);
+      margin-top: 8px;
+    }
+    .metric-warning {
+      font-size: 14px;
+      font-weight: 600;
+      color: #FF6D6A;
+      margin-top: 12px;
+      padding: 8px 12px;
+      background: rgba(255, 109, 106, 0.15);
+      border-radius: 6px;
+      border: 1px solid rgba(255, 109, 106, 0.3);
+    }
+    .indicator {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #00BCE1;
+      margin-right: 6px;
+    }
+    .indicator-warning {
+      background: #FF6D6A;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Healthy Program Metrics</div>
+
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="metric-label"><span class="indicator"></span>Assisted Orders</div>
+      <div class="metric-value">↑</div>
+      <div class="metric-range">Direct purchase influence</div>
+      <div style="font-size: 14px; color: rgba(6, 3, 141, 0.65); margin-top: 8px;">Track orders directly attributed to loyalty</div>
+    </div>
+
+    <div class="metric-card">
+      <div class="metric-label"><span class="indicator"></span>Active Member Rate</div>
+      <div class="metric-value">35–45%</div>
+      <div class="metric-range">Healthy engagement range</div>
+      <div style="font-size: 14px; color: rgba(6, 3, 141, 0.65); margin-top: 8px;">Monitor member participation</div>
+    </div>
+
+    <div class="metric-card">
+      <div class="metric-label"><span class="indicator"></span>Redemption Rate</div>
+      <div class="metric-value">20–35%</div>
+      <div class="metric-range">Healthy conversion range</div>
+      <div class="metric-warning"><span class="indicator indicator-warning"></span>Below 15% = problem</div>
+    </div>
+  </div>
+
+  <div style="font-size: 12px; color: rgba(6, 3, 141, 0.65); margin-top: 40px; text-align: center;">Source: Joy Loyalty industry benchmarks (2024)</div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html style="zoom: calc({{WIDTH}} / 1526);">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      background-image: url('{{BACKGROUND_PNG}}');
+      background-size: 100% 100%;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      padding: 60px 80px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      width: 100%;
+      max-width: 1300px;
+    }
+
+    .industry-card {
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 44px 36px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 240px;
+      justify-content: space-between;
+    }
+
+    .icon {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 24px;
+      flex-shrink: 0;
+    }
+
+    .industry-name {
+      font-size: 28px;
+      font-weight: 700;
+      color: #06038D;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .program-type {
+      font-size: 19px;
+      font-weight: 600;
+      color: rgba(6, 3, 141, 0.75);
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <!-- Fashion & Apparel -->
+    <div class="industry-card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 4L5 9H19L18 4H6Z" fill="#06038D" stroke="#06038D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5 9L6.5 20H17.5L19 9H5Z" fill="none" stroke="#06038D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="9" cy="16" r="1.5" fill="#06038D"/>
+        <circle cx="15" cy="16" r="1.5" fill="#06038D"/>
+      </svg>
+      <div class="industry-name">Fashion & Apparel</div>
+      <div class="program-type">Tiered + Staff Visibility</div>
+    </div>
+
+    <!-- Beauty & Cosmetics -->
+    <div class="industry-card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="9" r="3" stroke="#06038D" stroke-width="1.5"/>
+        <path d="M8 18C8 16 10 14.5 12 14.5C14 14.5 16 16 16 18" stroke="#06038D" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M12 2.5C11.5 4 11 5.5 11 7C11 8.5 11.5 10 12 11.5C12.5 10 13 8.5 13 7C13 5.5 12.5 4 12 2.5Z" fill="#06038D" opacity="0.3"/>
+        <path d="M6 9C4.5 8.5 3 8.5 2 9.5" stroke="#06038D" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M18 9C19.5 8.5 21 8.5 22 9.5" stroke="#06038D" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <div class="industry-name">Beauty & Cosmetics</div>
+      <div class="program-type">Tiered + Experiential</div>
+    </div>
+
+    <!-- Food & Beverage -->
+    <div class="industry-card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 2C8 2 6 6 6 10C6 14.4 8.7 18 12 18C15.3 18 18 14.4 18 10C18 6 16 2 16 2H8Z" fill="#06038D" opacity="0.3" stroke="#06038D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9 12C9 13.1 10.3 14 12 14C13.7 14 15 13.1 15 12" stroke="#06038D" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <div class="industry-name">Food & Beverage</div>
+      <div class="program-type">Points + Gamification</div>
+    </div>
+
+    <!-- Grocery -->
+    <div class="industry-card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 16C6.9 16 6 16.9 6 18C6 19.1 6.9 20 8 20C9.1 20 10 19.1 10 18C10 16.9 9.1 16 8 16Z" stroke="#06038D" stroke-width="1.5"/>
+        <path d="M16 16C14.9 16 14 16.9 14 18C14 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z" stroke="#06038D" stroke-width="1.5"/>
+        <path d="M3 5L6 11H18L20 5" stroke="#06038D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7 8H17" stroke="#06038D" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="9" cy="7" r="1.5" fill="#06038D"/>
+        <circle cx="13" cy="7" r="1.5" fill="#06038D"/>
+      </svg>
+      <div class="industry-name">Grocery</div>
+      <div class="program-type">Percentage-Back + Auto-Apply</div>
+    </div>
+
+    <!-- Health & Wellness -->
+    <div class="industry-card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2Z" stroke="#06038D" stroke-width="1.5"/>
+        <path d="M12 7V17" stroke="#06038D" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M7 12H17" stroke="#06038D" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <div class="industry-name">Health & Wellness</div>
+      <div class="program-type">Engagement-Based Points</div>
+    </div>
+
+    <!-- Fitness -->
+    <div class="industry-card">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="8" width="16" height="3" rx="1" fill="#06038D" opacity="0.3"/>
+        <line x1="3" y1="14" x2="21" y2="14" stroke="#06038D" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="6" cy="12" r="1" fill="#06038D"/>
+        <circle cx="18" cy="12" r="1" fill="#06038D"/>
+        <path d="M7 2V8" stroke="#06038D" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M17 2V8" stroke="#06038D" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M9 18C9 19.7 10.3 21 12 21C13.7 21 15 19.7 15 18" stroke="#06038D" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <div class="industry-name">Fitness</div>
+      <div class="program-type">Attendance + Win-Back</div>
+    </div>
+  </div>
+</body>
+</html>

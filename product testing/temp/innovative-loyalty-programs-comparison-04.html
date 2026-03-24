@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { zoom: calc({{WIDTH}} / 1526); }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-image: {{BACKGROUND_PNG}};
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 72px 80px;
+      gap: 36px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Headline -->
+  <h1 style="color: #06038D; font-size: 48px; font-weight: 700; text-align: center; margin-bottom: 20px;">
+    Traditional vs Innovative
+  </h1>
+
+  <!-- Comparison Cards -->
+  <div style="display: flex; gap: 32px; align-items: stretch; width: 100%;">
+
+    <!-- Left: Traditional (Navy) -->
+    <div style="
+      flex: 1;
+      background: rgba(6, 3, 141, 0.72);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      padding: 40px 36px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    ">
+      <div style="color: #00BCE1; font-size: 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 24px;">
+        Traditional
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#FF6D6A"/>
+            <path d="M9 9l6 6M15 9l-6 6" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <div style="color: #FFFFFF; font-size: 20px; font-weight: 500;">Transactional focus</div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#FF6D6A"/>
+            <path d="M9 9l6 6M15 9l-6 6" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <div style="color: #FFFFFF; font-size: 20px; font-weight: 500;">Generic mechanics</div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#FF6D6A"/>
+            <path d="M9 9l6 6M15 9l-6 6" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <div style="color: #FFFFFF; font-size: 20px; font-weight: 500;">Low engagement</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div style="display: flex; align-items: center; color: #06038D; font-size: 32px; font-weight: 700; padding: 0 4px; flex: 0 0 auto;">
+      VS
+    </div>
+
+    <!-- Right: Innovative (Coral) -->
+    <div style="
+      flex: 1;
+      background: rgba(255, 109, 106, 0.82);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 24px;
+      padding: 40px 36px;
+      box-shadow: 0 4px 24px rgba(255, 109, 106, 0.2);
+    ">
+      <div style="color: #FFFFFF; font-size: 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 24px;">
+        Innovative
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#FFF"/>
+            <path d="M8 12l3 3 5-5" stroke="#FF6D6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div style="color: #FFFFFF; font-size: 20px; font-weight: 500;">Emotional connection</div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#FFF"/>
+            <path d="M8 12l3 3 5-5" stroke="#FF6D6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div style="color: #FFFFFF; font-size: 20px; font-weight: 500;">Personalized experiences</div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#FFF"/>
+            <path d="M8 12l3 3 5-5" stroke="#FF6D6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div style="color: #FFFFFF; font-size: 20px; font-weight: 500;">Strong repeat behavior</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

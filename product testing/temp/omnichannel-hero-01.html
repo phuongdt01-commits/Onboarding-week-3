@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html style="zoom: calc({{WIDTH}} / 1526); width: 1526px;">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      background-image: url('{{BACKGROUND_PNG}}');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      position: relative;
+    }
+    .container {
+      max-width: 1200px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 84px;
+      font-weight: 700;
+      color: #06038D;
+      line-height: 1.1;
+      margin-bottom: 40px;
+      text-shadow: 0 0 1px rgba(6, 3, 141, 0.4);
+      max-width: 1350px;
+    }
+    .visual-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 40px 0;
+      gap: 60px;
+    }
+    .fragmented, .unified {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    .channel {
+      width: 100px;
+      height: 100px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .fragmented .channel {
+      margin-bottom: 20px;
+      opacity: 0.6;
+    }
+    .fragmented .channel::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 20px;
+      background: rgba(255, 109, 106, 0.5);
+      margin-top: 130px;
+    }
+    .arrow {
+      font-size: 48px;
+      color: #00BCE1;
+      margin: 0 40px;
+    }
+    .unified {
+      position: relative;
+    }
+    .profile-card {
+      width: 140px;
+      height: 140px;
+      border-radius: 20px;
+      background: rgba(6, 3, 141, 0.72);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 28px;
+      font-weight: 700;
+      box-shadow: 0 8px 32px rgba(6, 3, 141, 0.2);
+    }
+    .channel-ring {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      border: 3px solid #00BCE1;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ring-icon {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      color: #00BCE1;
+    }
+    .ring-icon:nth-child(1) { top: -50px; left: 50%; transform: translateX(-50%); }
+    .ring-icon:nth-child(2) { bottom: -50px; left: 50%; transform: translateX(-50%); }
+    .ring-icon:nth-child(3) { left: -50px; top: 50%; transform: translateY(-50%); }
+    .ring-icon:nth-child(4) { right: -50px; top: 50%; transform: translateY(-50%); }
+    .subtitle {
+      font-size: 24px;
+      color: rgba(6, 3, 141, 0.75);
+      margin-top: 40px;
+      font-weight: 600;
+    }
+    .bar {
+      width: 200px;
+      height: 9px;
+      background: #FCD299;
+      border-radius: 4px 20px 20px 4px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Omnichannel Loyalty Programs<br>Best by Industry</h1>
+
+    <div class="visual-container">
+      <div class="fragmented">
+        <div style="font-size: 14px; font-weight: 600; color: #FF6D6A; letter-spacing: 1.5px; text-transform: uppercase;">Disconnected</div>
+        <div class="channel">🌐</div>
+        <div class="channel">🏪</div>
+        <div class="channel">📱</div>
+        <div class="channel">✉️</div>
+      </div>
+
+      <div class="arrow">→</div>
+
+      <div class="unified">
+        <div style="font-size: 14px; font-weight: 600; color: #00BCE1; letter-spacing: 1.5px; text-transform: uppercase;">Unified</div>
+        <div class="channel-ring">
+          <div class="profile-card">1</div>
+          <div class="ring-icon">🌐</div>
+          <div class="ring-icon">🏪</div>
+          <div class="ring-icon">📱</div>
+          <div class="ring-icon">✉️</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subtitle">One customer. One profile. Every channel synced.</div>
+    <div class="bar"></div>
+  </div>
+</body>
+</html>

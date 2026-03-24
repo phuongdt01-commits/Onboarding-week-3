@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { zoom: calc({{WIDTH}} / 1526); }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-image: {{BACKGROUND_PNG}};
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 80px;
+      gap: 36px;
+      overflow: hidden;
+    }
+    .headline {
+      color: #06038D;
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+      max-width: 900px;
+    }
+    .tagline {
+      color: #00BCE1;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .profiles-container {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .profile {
+      flex: 0 1 360px;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      padding: 44px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+    .profile-icon {
+      width: 56px;
+      height: 56px;
+      background: #00BCE1;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 28px;
+      position: relative;
+      z-index: 1;
+    }
+    .profile-name {
+      color: #06038D;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .profile-highlight {
+      background: rgba(0, 188, 225, 0.3);
+      border: 2px solid #00BCE1;
+      border-radius: 12px;
+      padding: 12px 16px;
+      color: #06038D;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .profile-desc {
+      color: rgba(6, 3, 141, 0.7);
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="headline">Amazon Prime: ML-Driven Personalization</div>
+  <div class="tagline">Machine learning tailors benefits to each customer</div>
+
+  <div class="profiles-container">
+    <div class="profile" data-num="01">
+      <div class="profile-icon">👤</div>
+      <div class="profile-name">Customer A</div>
+      <div class="profile-highlight">Free Shipping</div>
+      <div class="profile-desc">Frequent shopper</div>
+    </div>
+
+    <div class="profile" data-num="02">
+      <div class="profile-icon">👤</div>
+      <div class="profile-name">Customer B</div>
+      <div class="profile-highlight">Prime Video</div>
+      <div class="profile-desc">Entertainment focus</div>
+    </div>
+
+    <div class="profile" data-num="03">
+      <div class="profile-icon">👤</div>
+      <div class="profile-name">Customer C</div>
+      <div class="profile-highlight">Music & Podcasts</div>
+      <div class="profile-desc">Content lover</div>
+    </div>
+  </div>
+</body>
+</html>

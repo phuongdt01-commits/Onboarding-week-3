@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html style="zoom: calc(1526 / 1526);">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 1526px;
+      height: 890px;
+      background-image: url('{{BACKGROUND_BASE64}}');
+      background-size: 100% 100%;
+      background-position: center;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 80px;
+      position: relative;
+    }
+
+    /* Left side: Headline */
+    .headline-section {
+      flex: 0 0 45%;
+      max-width: 600px;
+      z-index: 10;
+    }
+
+    h1 {
+      font-size: 84px;
+      font-weight: 700;
+      color: #06038D;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      text-shadow: 0 0 1px rgba(6, 3, 141, 0.4);
+      letter-spacing: -0.5px;
+    }
+
+    .subheadline {
+      font-size: 22px;
+      font-weight: 600;
+      color: rgba(6, 3, 141, 0.75);
+      line-height: 1.4;
+      max-width: 500px;
+    }
+
+    /* Right side: Stacked cards */
+    .cards-container {
+      flex: 0 0 50%;
+      position: relative;
+      height: 450px;
+      width: 480px;
+      margin-right: 60px;
+    }
+
+    .mechanic-card {
+      position: absolute;
+      width: 340px;
+      height: 160px;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 2px solid #00BCE1;
+      border-radius: 24px;
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      transition: all 0.3s ease;
+    }
+
+    /* Card 1: Points (front, top-left) */
+    .card-1 {
+      top: 20px;
+      left: 0px;
+      z-index: 3;
+      transform: rotate(-8deg);
+    }
+
+    /* Card 2: Tiers (middle, center) */
+    .card-2 {
+      top: 110px;
+      left: 80px;
+      z-index: 2;
+      transform: rotate(0deg);
+    }
+
+    /* Card 3: Experiential (back, bottom-right) */
+    .card-3 {
+      top: 200px;
+      left: 160px;
+      z-index: 1;
+      transform: rotate(8deg);
+    }
+
+    /* Card icon */
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 188, 225, 0.2);
+      border-radius: 12px;
+    }
+
+    .card-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: #00BCE1;
+      fill: none;
+      stroke-width: 2;
+    }
+
+    /* Card badge */
+    .card-badge {
+      font-size: 13px;
+      font-weight: 600;
+      color: #00BCE1;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 8px;
+    }
+
+    /* Card title */
+    .card-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #06038D;
+      line-height: 1.2;
+    }
+
+    /* Card description */
+    .card-description {
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(6, 3, 141, 0.75);
+      margin-top: 4px;
+    }
+
+    /* Accent bar */
+    .accent-bar {
+      position: absolute;
+      bottom: 80px;
+      left: 80px;
+      width: 120px;
+      height: 9px;
+      background: #FCD299;
+      border-radius: 4px 20px 20px 4px;
+      z-index: 5;
+    }
+  </style>
+</head>
+<body>
+  <!-- Accent bar -->
+  <div class="accent-bar"></div>
+
+  <!-- Left: Headline -->
+  <div class="headline-section">
+    <h1>7 Hybrid Loyalty Programs That Actually Work</h1>
+    <p class="subheadline">The mechanics that drive repeat purchases</p>
+  </div>
+
+  <!-- Right: Stacked cards -->
+  <div class="cards-container">
+    <!-- Card 1: Points -->
+    <div class="mechanic-card card-1">
+      <div class="card-badge">Building Block 1</div>
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 8v8M8 12h8"></path>
+        </svg>
+      </div>
+      <div class="card-title">Points</div>
+      <div class="card-description">Earn & redeem currency</div>
+    </div>
+
+    <!-- Card 2: Tiers -->
+    <div class="mechanic-card card-2">
+      <div class="card-badge">Building Block 2</div>
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+        </svg>
+      </div>
+      <div class="card-title">Tiers</div>
+      <div class="card-description">Level-based status</div>
+    </div>
+
+    <!-- Card 3: Experiential -->
+    <div class="mechanic-card card-3">
+      <div class="card-badge">Building Block 3</div>
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+      </div>
+      <div class="card-title">Experiential</div>
+      <div class="card-description">Exclusive access & events</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { zoom: calc({{WIDTH}} / 1526); }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-image: {{BACKGROUND_PNG}};
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 72px 80px;
+      gap: 36px;
+      overflow: hidden;
+    }
+    h1 { color: #06038D; font-size: 48px; font-weight: 700; text-align: center; }
+    .comparison { display: flex; gap: 32px; align-items: stretch; width: 100%; }
+    .panel { flex: 1; border-radius: 24px; padding: 40px 36px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15); }
+    .panel-without { background: rgba(6, 3, 141, 0.72); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255, 255, 255, 0.12); }
+    .panel-with { background: rgba(255, 109, 106, 0.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 4px 24px rgba(255, 109, 106, 0.2); }
+    .panel-label { color: #FFFFFF; font-size: 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    .panel-without .panel-label { color: #00BCE1; }
+    .item { display: flex; align-items: center; gap: 12px; }
+    .icon { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; }
+    .item-text { color: #FFFFFF; font-size: 22px; font-weight: 500; }
+    .divider { width: 40px; height: 2px; background: #06038D; border-radius: 1px; flex-shrink: 0; }
+    .vs { color: #06038D; font-size: 32px; font-weight: 700; align-self: center; }
+  </style>
+</head>
+<body>
+  <h1>Paid Membership: Higher Barrier, Higher CLV</h1>
+
+  <div class="comparison">
+    <div class="panel panel-without">
+      <div class="panel-label">Free Program</div>
+      <div class="item">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#FF6D6A"/>
+            <path d="M9 9l6 6M15 9l-6 6" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="item-text">Discount dependent</div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#FF6D6A"/>
+            <path d="M9 9l6 6M15 9l-6 6" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="item-text">Low commitment</div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#FF6D6A"/>
+            <path d="M9 9l6 6M15 9l-6 6" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="item-text">No recurring revenue</div>
+      </div>
+    </div>
+
+    <div class="vs">VS</div>
+
+    <div class="panel panel-with">
+      <div class="panel-label">Paid Membership</div>
+      <div class="item">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#FFF"/>
+            <path d="M8 12l3 3 5-5" stroke="#FF6D6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="item-text">Value-driven benefits</div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#FFF"/>
+            <path d="M8 12l3 3 5-5" stroke="#FF6D6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="item-text">Higher commitment</div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#FFF"/>
+            <path d="M8 12l3 3 5-5" stroke="#FF6D6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="item-text">Predictable revenue</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

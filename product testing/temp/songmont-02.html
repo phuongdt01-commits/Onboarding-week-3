@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { zoom: calc({{WIDTH}} / 1526); }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-image: {{BACKGROUND_PNG}};
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 80px;
+      gap: 36px;
+      overflow: hidden;
+    }
+    .headline {
+      color: #06038D;
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+      max-width: 900px;
+    }
+    .cards-container {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .card {
+      flex: 0 1 380px;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      padding: 48px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-icon {
+      width: 56px;
+      height: 56px;
+      background: #00BCE1;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 32px;
+      position: relative;
+      z-index: 1;
+    }
+    .card-title {
+      color: #06038D;
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .card-desc {
+      color: rgba(6, 3, 141, 0.75);
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .stat-box {
+      background: rgba(6, 3, 141, 0.72);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      padding: 32px 40px;
+      text-align: center;
+      max-width: 500px;
+    }
+    .stat-number {
+      color: #00BCE1;
+      font-size: 56px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .stat-label {
+      color: #FFFFFF;
+      font-size: 22px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="headline">Golden Pine Society: Choose Your Reward</div>
+
+  <div class="cards-container">
+    <div class="card" data-num="01">
+      <div class="card-icon">🎁</div>
+      <div class="card-title">Option A</div>
+      <div class="card-desc">Premium Gear</div>
+    </div>
+    <div class="card" data-num="02">
+      <div class="card-icon">🎁</div>
+      <div class="card-title">Option B</div>
+      <div class="card-desc">Exclusive Access</div>
+    </div>
+    <div class="card" data-num="03">
+      <div class="card-icon">🎁</div>
+      <div class="card-title">Option C</div>
+      <div class="card-desc">Gift Card</div>
+    </div>
+  </div>
+
+  <div class="stat-box">
+    <div class="stat-number">$110K</div>
+    <div class="stat-label">Assisted revenue in 14 days</div>
+  </div>
+</body>
+</html>

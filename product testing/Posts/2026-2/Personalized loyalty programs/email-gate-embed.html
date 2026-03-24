@@ -1,0 +1,154 @@
+<!--
+  Joy Email Gate — 4-Week Personalization Roadmap PDF
+  v2: Redesigned with PDF preview, connected input/button, stronger visual hook
+-->
+
+<div id="joy-email-gate" style="background: linear-gradient(135deg, #f0f4ff 0%, #e8eeff 100%); border-radius: 20px; padding: 0; margin: 40px 0; border: 1px solid #d0d8f0; overflow: hidden; box-shadow: 0 4px 24px rgba(6,3,141,0.08);">
+
+  <!-- Pre-submit state -->
+  <div id="gate-form">
+    <div style="display: flex; align-items: stretch; min-height: 280px;">
+
+      <!-- Left: PDF Preview -->
+      <div style="flex: 0 0 220px; background: #06038D; display: flex; align-items: center; justify-content: center; padding: 28px 20px; position: relative; overflow: hidden;">
+        <!-- Decorative circles -->
+        <div style="position: absolute; top: -30px; right: -30px; width: 100px; height: 100px; border-radius: 50%; background: rgba(0,188,225,0.15);"></div>
+        <div style="position: absolute; bottom: -20px; left: -20px; width: 80px; height: 80px; border-radius: 50%; background: rgba(252,210,153,0.1);"></div>
+        <!-- PDF mockup -->
+        <div style="background: #ffffff; border-radius: 8px; padding: 12px; width: 160px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); transform: rotate(-2deg);">
+          <div style="background: #f0f4ff; border-radius: 4px; padding: 10px 8px; margin-bottom: 6px;">
+            <div style="font-size: 7px; font-weight: 700; color: #06038D; text-align: center; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px;">ACTION CHECKLIST</div>
+            <div style="font-size: 9px; font-weight: 700; color: #06038D; text-align: center; line-height: 1.2;">Your 4-Week Loyalty Personalization Roadmap</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <div style="width: 16px; height: 16px; background: #06038D; border-radius: 50%; color: #fff; font-size: 8px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+              <div style="font-size: 7px; color: #1a1a1a; font-weight: 600;">Add Reward Choices</div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <div style="width: 16px; height: 16px; background: #06038D; border-radius: 50%; color: #fff; font-size: 8px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+              <div style="font-size: 7px; color: #1a1a1a; font-weight: 600;">Set Up One Trigger</div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <div style="width: 16px; height: 16px; background: #06038D; border-radius: 50%; color: #fff; font-size: 8px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+              <div style="font-size: 7px; color: #1a1a1a; font-weight: 600;">Collect Zero-Party Data</div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <div style="width: 16px; height: 16px; background: #00BCE1; border-radius: 50%; color: #fff; font-size: 8px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+              <div style="font-size: 7px; color: #1a1a1a; font-weight: 600;">Read Data & Adjust</div>
+            </div>
+          </div>
+          <div style="margin-top: 6px; text-align: center;">
+            <span style="font-size: 6px; color: #aaa; font-weight: 500;">4 pages · PDF</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form content -->
+      <div style="flex: 1; padding: 32px 36px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="display: inline-block; background: #00BCE1; color: #ffffff; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 10px; border-radius: 4px; margin-bottom: 12px; width: fit-content;">FREE CHECKLIST</div>
+
+        <h3 style="color: #06038D; font-size: 24px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.25;">Get the 4-Week Personalization Roadmap</h3>
+
+        <p style="color: #4a4a6a; font-size: 14px; line-height: 1.55; margin: 0 0 6px 0;">Step-by-step setup instructions, expected outcomes, common mistakes to avoid, and a metrics tracking table.</p>
+
+        <div style="margin: 0 0 18px 0;">
+          <div style="color: #1a1a2e; font-size: 13px; line-height: 1.8; padding-left: 20px; position: relative;">
+            <span style="position: absolute; left: 0; color: #00BCE1; font-weight: 700;">✓</span>Week-by-week action steps with Joy setup paths
+          </div>
+          <div style="color: #1a1a2e; font-size: 13px; line-height: 1.8; padding-left: 20px; position: relative;">
+            <span style="position: absolute; left: 0; color: #00BCE1; font-weight: 700;">✓</span>5 mistakes that kill personalization programs
+          </div>
+          <div style="color: #1a1a2e; font-size: 13px; line-height: 1.8; padding-left: 20px; position: relative;">
+            <span style="position: absolute; left: 0; color: #00BCE1; font-weight: 700;">✓</span>Metrics reference table (what to track + benchmarks)
+          </div>
+        </div>
+
+        <!-- Connected input + button -->
+        <div style="display: flex; max-width: 420px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(6,3,141,0.12);">
+          <input
+            id="gate-email"
+            type="email"
+            placeholder="Enter your email address"
+            style="flex: 1; padding: 14px 16px; border: none; font-size: 15px; outline: none; background: #ffffff; color: #1a1a1a; margin: 0;"
+          >
+          <button
+            id="gate-btn"
+            onclick="submitEmailGate()"
+            style="background: #06038D; color: #ffffff; border: none; padding: 14px 24px; font-size: 15px; font-weight: 700; cursor: pointer; white-space: nowrap; transition: background 0.2s; margin: 0;"
+            onmouseover="this.style.background='#0a05b0'"
+            onmouseout="this.style.background='#06038D'"
+          >Get the PDF →</button>
+        </div>
+
+        <p style="color: #aaaacc; font-size: 11px; margin-top: 8px;">No spam. Unsubscribe anytime.</p>
+
+        <div id="gate-error" style="display: none; color: #FF6D6A; font-size: 13px; margin-top: 6px; font-weight: 500;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post-submit state (hidden initially) -->
+  <div id="gate-success" style="display: none; padding: 48px 36px; text-align: center;">
+    <div style="width: 56px; height: 56px; background: #eef9ee; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+      <span style="font-size: 28px;">✅</span>
+    </div>
+    <h3 style="color: #06038D; font-size: 24px; font-weight: 700; margin: 0 0 8px 0;">Your roadmap is ready!</h3>
+    <p style="color: #4a4a6a; font-size: 15px; margin: 0 0 20px 0;">Click below to download the 4-page PDF checklist.</p>
+    <a
+      id="gate-download-link"
+      href="#"
+      target="_blank"
+      style="display: inline-block; background: #06038D; color: #ffffff; padding: 16px 36px; border-radius: 10px; font-size: 16px; font-weight: 700; text-decoration: none; transition: background 0.2s; box-shadow: 0 4px 16px rgba(6,3,141,0.2);"
+      onmouseover="this.style.background='#0a05b0'"
+      onmouseout="this.style.background='#06038D'"
+    >Download PDF →</a>
+  </div>
+</div>
+
+<script>
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzFjrqD-gwKioasYlljQG1c3jJODYSeC65kx1JaMUUR6cv6kroQm6fSe7dvREMeMy1F/exec';
+const PDF_DOWNLOAD_URL = 'https://drive.google.com/uc?export=download&id=1Q3bux4wgFoYSFOM5sxKmdR6-lciOOnsk';
+
+function submitEmailGate() {
+  const emailInput = document.getElementById('gate-email');
+  const btn = document.getElementById('gate-btn');
+  const errorDiv = document.getElementById('gate-error');
+  const email = emailInput.value.trim();
+
+  if (!email || !email.includes('@') || !email.includes('.')) {
+    errorDiv.textContent = 'Please enter a valid email address.';
+    errorDiv.style.display = 'block';
+    return;
+  }
+
+  errorDiv.style.display = 'none';
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  btn.style.opacity = '0.7';
+
+  fetch(APPS_SCRIPT_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email: email, source: window.location.href })
+  })
+  .then(() => {
+    document.getElementById('gate-form').style.display = 'none';
+    document.getElementById('gate-success').style.display = 'block';
+    document.getElementById('gate-download-link').href = PDF_DOWNLOAD_URL;
+    localStorage.setItem('joy-roadmap-downloaded', 'true');
+  })
+  .catch(() => {
+    document.getElementById('gate-form').style.display = 'none';
+    document.getElementById('gate-success').style.display = 'block';
+    document.getElementById('gate-download-link').href = PDF_DOWNLOAD_URL;
+  });
+}
+
+if (localStorage.getItem('joy-roadmap-downloaded') === 'true') {
+  document.getElementById('gate-form').style.display = 'none';
+  document.getElementById('gate-success').style.display = 'block';
+  document.getElementById('gate-download-link').href = PDF_DOWNLOAD_URL;
+}
+</script>

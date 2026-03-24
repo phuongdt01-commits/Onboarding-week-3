@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    {{FONT_CLASH_DISPLAY}}
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 1474px;
+      height: 907px;
+      font-family: 'Clash Display', sans-serif;
+      background-image: url('{{BACKGROUND_THUMBNAIL_BASE64}}');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .text-block {
+      position: absolute;
+      bottom: 80px;
+      left: 80px;
+    }
+
+    .title {
+      color: #FFFFFF;
+      font-size: 100px;
+      font-weight: 700;
+      line-height: 1.05;
+    }
+
+    .subtitle {
+      color: #FFFFFF;
+      font-size: 52px;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .icon {
+      display: inline-flex;
+      align-items: center;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+  <div class="text-block">
+    <div class="title">Customer service benchmarks</div>
+    <div class="subtitle">
+      a complete guide
+      <span class="icon">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+        </svg>
+      </span>
+    </div>
+  </div>
+</body>
+</html>

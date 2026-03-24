@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    {{FONT_CLASH_DISPLAY}}
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 1500px;
+      height: 1000px;
+      font-family: 'Clash Display', sans-serif;
+      background-image: url('{{BACKGROUND_BASE64}}');
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 52px 70px;
+      gap: 28px;
+    }
+
+    .heading {
+      color: #FFFFFF;
+      font-size: 50px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .metric {
+      background: #FBC80B;
+      border-radius: 20px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .metric.wide {
+      grid-column: 1 / -1;
+      background: #000000;
+    }
+
+    .metric-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .metric.wide .metric-icon {
+      background: #FBC80B;
+    }
+
+    .metric-icon svg {
+      width: 30px;
+      height: 30px;
+      fill: #FBC80B;
+    }
+
+    .metric.wide .metric-icon svg {
+      fill: #000;
+    }
+
+    .metric-content {
+      flex: 1;
+    }
+
+    .metric-name {
+      font-size: 26px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 6px;
+    }
+
+    .metric.wide .metric-name {
+      color: #FBC80B;
+    }
+
+    .metric-abbr {
+      display: inline-block;
+      background: #000;
+      color: #FBC80B;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 8px;
+    }
+
+    .metric.wide .metric-abbr {
+      background: #FBC80B;
+      color: #000;
+    }
+
+    .metric-desc {
+      font-size: 20px;
+      font-weight: 400;
+      color: rgba(0,0,0,0.7);
+      line-height: 1.35;
+    }
+
+    .metric.wide .metric-desc {
+      color: rgba(255,255,255,0.75);
+    }
+
+    .metric-highlight {
+      font-size: 24px;
+      font-weight: 700;
+      color: #000;
+      background: #FBC80B;
+      padding: 8px 20px;
+      border-radius: 100px;
+      flex-shrink: 0;
+    }
+
+    .metric.wide .metric-highlight {
+      background: #FBC80B;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="heading">5 key SaaS retention metrics to track</div>
+
+  <div class="metrics">
+    <div class="metric">
+      <div class="metric-icon">
+        <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+      </div>
+      <div class="metric-content">
+        <span class="metric-abbr">CRR</span>
+        <div class="metric-name">Customer Retention Rate</div>
+        <div class="metric-desc">% of accounts still active at end of period. Your baseline logo retention number.</div>
+      </div>
+      <div class="metric-highlight">Logo</div>
+    </div>
+
+    <div class="metric">
+      <div class="metric-icon">
+        <svg viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>
+      </div>
+      <div class="metric-content">
+        <span class="metric-abbr">GRR</span>
+        <div class="metric-name">Gross Revenue Retention</div>
+        <div class="metric-desc">Revenue held onto excluding expansion. Always &le;100%. Healthy floor: 80–85%+.</div>
+      </div>
+      <div class="metric-highlight">Floor</div>
+    </div>
+
+    <div class="metric wide">
+      <div class="metric-icon">
+        <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+      </div>
+      <div class="metric-content">
+        <span class="metric-abbr">NRR</span>
+        <div class="metric-name">Net Revenue Retention</div>
+        <div class="metric-desc">Revenue from existing customers including expansion minus churn &amp; downgrades. Can exceed 100% — meaning growth from existing customers alone. Target: 110%+ for growth-stage SaaS.</div>
+      </div>
+      <div class="metric-highlight">Can exceed 100%</div>
+    </div>
+
+    <div class="metric">
+      <div class="metric-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+      </div>
+      <div class="metric-content">
+        <span class="metric-abbr">CLV / LTV</span>
+        <div class="metric-name">Customer Lifetime Value</div>
+        <div class="metric-desc">Total revenue per customer over their lifespan. Improves as retention increases.</div>
+      </div>
+      <div class="metric-highlight">Revenue</div>
+    </div>
+
+    <div class="metric">
+      <div class="metric-icon">
+        <svg viewBox="0 0 24 24"><path d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0 0 13 21a9 9 0 0 0 0-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+      </div>
+      <div class="metric-content">
+        <span class="metric-abbr">Churn Rate</span>
+        <div class="metric-name">Monthly &amp; Annual Churn</div>
+        <div class="metric-desc">Inverse of retention. 2% monthly = ~22% annual churn. Track both timeframes.</div>
+      </div>
+      <div class="metric-highlight">Inverse</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { zoom: calc({{WIDTH}} / 1526); }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-image: {{BACKGROUND_PNG}};
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 80px;
+      gap: 32px;
+      overflow: hidden;
+    }
+    .headline {
+      color: #06038D;
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .stat-banner {
+      background: rgba(6, 3, 141, 0.72);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 20px 32px;
+      color: #FFFFFF;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .tiers-container {
+      display: flex;
+      gap: 24px;
+      width: 100%;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    .tier {
+      flex: 0 1 340px;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      padding: 40px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+    .tier-badge {
+      background: #00BCE1;
+      color: #FFFFFF;
+      padding: 6px 16px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .tier-icon {
+      width: 52px;
+      height: 52px;
+      background: #00BCE1;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 28px;
+    }
+    .tier-title {
+      color: #06038D;
+      font-size: 26px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .tier-desc {
+      color: rgba(6, 3, 141, 0.75);
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .tier-benefit {
+      color: rgba(6, 3, 141, 0.7);
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      padding-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="headline">Sephora Beauty Insider: Tiered + Choice</div>
+
+  <div class="stat-banner">34+ million members across 3 tiers</div>
+
+  <div class="tiers-container">
+    <div class="tier">
+      <div class="tier-badge">BRONZE</div>
+      <div class="tier-icon">⭐</div>
+      <div class="tier-title">Bronze</div>
+      <div class="tier-desc">Entry Level</div>
+      <div class="tier-benefit">Birthday gift selection</div>
+    </div>
+
+    <div class="tier">
+      <div class="tier-badge">SILVER</div>
+      <div class="tier-icon">⭐⭐</div>
+      <div class="tier-title">Silver</div>
+      <div class="tier-desc">Engaged Members</div>
+      <div class="tier-benefit">Priority beauty offers</div>
+    </div>
+
+    <div class="tier">
+      <div class="tier-badge">GOLD</div>
+      <div class="tier-icon">⭐⭐⭐</div>
+      <div class="tier-title">Gold</div>
+      <div class="tier-desc">VIP Loyalty</div>
+      <div class="tier-benefit">Exclusive early access</div>
+    </div>
+  </div>
+</body>
+</html>

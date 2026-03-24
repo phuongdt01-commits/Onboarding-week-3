@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { zoom: calc({{WIDTH}} / 1526); }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-image: {{BACKGROUND_PNG}};
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 100px;
+      gap: 36px;
+      overflow: hidden;
+    }
+    .header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .headline {
+      color: #06038D;
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 1.15;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      width: 100%;
+    }
+    .card {
+      background: rgba(6, 3, 141, 0.72);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+      padding: 36px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .card-icon { margin-bottom: 6px; }
+    .card-title {
+      color: #FFFFFF;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .card-desc {
+      color: rgba(255, 255, 255, 0.70);
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="headline">Why Traditional Programs Fail</div>
+  </div>
+
+  <div class="grid">
+
+    <!-- Problem 1 -->
+    <div class="card">
+      <div class="card-icon">
+        <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="10" fill="#00BCE1" x="4" y="4"/>
+          <circle cx="24" cy="24" r="16" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+          <path d="M24 12v24M12 24h24" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="card-title">Engagement Gap</div>
+      <div class="card-desc">Membership doesn't translate to active participation</div>
+    </div>
+
+    <!-- Problem 2 -->
+    <div class="card">
+      <div class="card-icon">
+        <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="10" fill="#00BCE1" x="4" y="4"/>
+          <rect x="12" y="14" width="24" height="20" rx="2" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+          <line x1="12" y1="22" x2="36" y2="22" stroke="#FFFFFF" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="card-title">Points Lack Connection</div>
+      <div class="card-desc">Generic "1 point per dollar" becomes forgettable</div>
+    </div>
+
+    <!-- Problem 3 -->
+    <div class="card">
+      <div class="card-icon">
+        <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="10" fill="#00BCE1" x="4" y="4"/>
+          <circle cx="24" cy="24" r="14" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+          <path d="M18 24l3 3 6-6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="card-title">Discounts Encourage Waiting</div>
+      <div class="card-desc">Rewards as discounts train customers to delay purchases</div>
+    </div>
+
+    <!-- Problem 4 -->
+    <div class="card">
+      <div class="card-icon">
+        <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="10" fill="#00BCE1" x="4" y="4"/>
+          <rect x="10" y="12" width="28" height="24" rx="2" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+          <line x1="10" y1="20" x2="38" y2="20" stroke="#FFFFFF" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="card-title">One-Size-Fits-All</div>
+      <div class="card-desc">No personalization between new and loyal customers</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

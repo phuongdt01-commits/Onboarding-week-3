@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { zoom: calc({{WIDTH}} / 1526); }
+    body {
+      width: 1526px;
+      height: {{HEIGHT_BASE}}px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-image: {{BACKGROUND_PNG}};
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 80px;
+      gap: 36px;
+      overflow: hidden;
+    }
+    .headline {
+      color: #06038D;
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+      max-width: 900px;
+    }
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      padding: 44px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-icon {
+      width: 52px;
+      height: 52px;
+      background: #00BCE1;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 28px;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 0 16px rgba(0, 188, 225, 0.5);
+    }
+    .card-title {
+      color: #06038D;
+      font-size: 26px;
+      font-weight: 700;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .card-desc {
+      color: rgba(6, 3, 141, 0.75);
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="headline">Nike Membership: Non-Discount Rewards</div>
+
+  <div class="cards-container">
+    <div class="card" data-num="01">
+      <div class="card-icon">⏰</div>
+      <div class="card-title">Early Access</div>
+      <div class="card-desc">Drop first</div>
+    </div>
+
+    <div class="card" data-num="02">
+      <div class="card-icon">👕</div>
+      <div class="card-title">Member-Only</div>
+      <div class="card-desc">Exclusive gear</div>
+    </div>
+
+    <div class="card" data-num="03">
+      <div class="card-icon">💪</div>
+      <div class="card-title">Fitness</div>
+      <div class="card-desc">App integration</div>
+    </div>
+  </div>
+</body>
+</html>

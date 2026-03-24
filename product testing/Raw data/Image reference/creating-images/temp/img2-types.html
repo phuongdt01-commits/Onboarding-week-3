@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    {{FONT_CLASH_DISPLAY}}
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 1500px;
+      height: 1000px;
+      font-family: 'Clash Display', sans-serif;
+      background-image: url('{{BACKGROUND_BASE64}}');
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 60px;
+    }
+
+    h1 {
+      color: #FFFFFF;
+      font-size: 52px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      width: 100%;
+    }
+
+    .type {
+      background: #FBC80B;
+      border-radius: 20px;
+      padding: 28px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
+    .number {
+      background: #000000;
+      color: #FFFFFF;
+      min-width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .type-title {
+      color: #000000;
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .type-desc {
+      color: #000000;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.35;
+    }
+  </style>
+</head>
+<body>
+  <h1>Types of customer service operations</h1>
+
+  <div class="grid">
+    <div class="type">
+      <span class="number">1</span>
+      <div class="content">
+        <div class="type-title">Reactive Support</div>
+        <div class="type-desc">Responds to inbound requests. Help desks, call centers, email, live chat.</div>
+      </div>
+    </div>
+
+    <div class="type">
+      <span class="number">2</span>
+      <div class="content">
+        <div class="type-title">Proactive Support</div>
+        <div class="type-desc">Reaches customers before problems. Alerts, reminders, notifications.</div>
+      </div>
+    </div>
+
+    <div class="type">
+      <span class="number">3</span>
+      <div class="content">
+        <div class="type-title">Self-Service</div>
+        <div class="type-desc">Customers resolve issues independently. Knowledge bases, FAQs, chatbots.</div>
+      </div>
+    </div>
+
+    <div class="type">
+      <span class="number">4</span>
+      <div class="content">
+        <div class="type-title">Omnichannel</div>
+        <div class="type-desc">Support across all channels with unified customer history.</div>
+      </div>
+    </div>
+
+    <div class="type">
+      <span class="number">5</span>
+      <div class="content">
+        <div class="type-title">Tiered Support</div>
+        <div class="type-desc">Matches problem complexity with agent expertise. Tier 1, 2, 3.</div>
+      </div>
+    </div>
+
+    <div class="type">
+      <span class="number">6</span>
+      <div class="content">
+        <div class="type-title">Outsourced vs In-house</div>
+        <div class="type-desc">Hybrid approach: complex cases internal, volume outsourced.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
