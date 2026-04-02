@@ -143,11 +143,43 @@ Replace with commas, periods, or colons. Or rewrite the sentence.
 
 **No corporate boilerplate.** No "robust governance," "compounds value," or "continued leadership in shaping responsible AI practices globally."
 
+### Decision-Oriented Writing (from V4)
+
+**Collapse choices, don't expand them.** Don't list as many options as possible. Narrow the reader's choices. Instead of 15 apps, say "if you are a beginner, just start with these 2."
+
+**Translate features into consequences.** Not "automates fulfillment" but "this saves you 2-3 hours per day but increases your refund risk if supplier quality is inconsistent."
+
+**Every section must answer "so what should the reader do next?"** If it can't answer that, the section doesn't deserve to exist.
+
+**Add clear constraints and exclusions.** Don't just say what to do. Say who should NOT do it. "If you are at $0-$1k/month, ignore these apps completely."
+
+### Voice Calibration (from V4)
+
+**Preserve problem-first instinct.** My raw writing opens with merchant reality, not feature lists. Claude must keep this structure.
+
+**Preserve limitation transparency.** My raw writing names what tools do NOT do. Claude must not smooth over limitations.
+
+**Preserve who-it's-for / who-it's-not framing.** Never generalize recommendations to "all stores" or "all merchants."
+
+**Claude must not over-smooth.** The goal is a better version of my voice, not a replacement. If a polished version sounds like a different person, revert to raw phrasing and only fix grammar.
+
+**Claude must not add filler connectors.** No "The appeal is obvious" or "What the listing doesn't spell out." Go straight to the thing.
+
+### Product Knowledge (from V4)
+
+**Lead with observed details, not listing claims.** "The setup wizard took 4 minutes" beats "easy setup process."
+
+**Name the real friction, which is almost never setup.** It's strategy (what to reward), prioritization (where to start), or choice paralysis (too many options).
+
+**Distinguish between what the app claims and what it delivers.** Label clearly when a claim has not been verified through testing.
+
+**Explain the app's actual job in one sentence before listing features.** If you can't state the job in one sentence, you don't understand the product well enough to recommend it.
+
 ---
 
 ## Style Guide Reference
 
-When writing any content, ALWAYS read `style-guide/writing-style-guide-v3(final).md` first. Follow every guideline in that document, including tone, sentence structure, paragraph structure, vocabulary, openings, closings, transitions, evidence, formatting, and pacing.
+When writing any content, ALWAYS read `style-guide/writing-style-guide-v4.md` first. Follow every guideline in that document, including tone, sentence structure, paragraph structure, vocabulary, openings, closings, transitions, evidence, formatting, and pacing.
 
 ---
 
@@ -237,3 +269,11 @@ Every piece must pass these checks before it's considered done:
 - [ ] Concrete before abstract, examples first
 - [ ] Comparisons take a position, no false balance
 - [ ] Tone is conversational-professional, peer-to-peer
+- [ ] Every section with multiple options narrows choices and recommends one
+- [ ] Features described as consequences to the business, not just functions
+- [ ] Clear constraints: who should NOT follow this advice
+- [ ] Every section answers "what should the reader do next?"
+- [ ] No app store descriptions paraphrased without added trade-offs or observations
+- [ ] Product recommendations matched to reader's stage (revenue, experience)
+- [ ] Voice sounds like a better version of my raw writing, not a replacement
+- [ ] No filler connectors added by Claude ("The appeal is obvious," etc.)
